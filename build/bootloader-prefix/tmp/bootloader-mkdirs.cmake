@@ -5,18 +5,18 @@ cmake_minimum_required(VERSION 3.5)
 
 file(MAKE_DIRECTORY
   "/Users/admin/esp/esp-idf/components/bootloader/subproject"
-  "/Users/admin/Documents/Projects/Shelly/i2c_tools/build/bootloader"
-  "/Users/admin/Documents/Projects/Shelly/i2c_tools/build/bootloader-prefix"
-  "/Users/admin/Documents/Projects/Shelly/i2c_tools/build/bootloader-prefix/tmp"
-  "/Users/admin/Documents/Projects/Shelly/i2c_tools/build/bootloader-prefix/src/bootloader-stamp"
-  "/Users/admin/Documents/Projects/Shelly/i2c_tools/build/bootloader-prefix/src"
-  "/Users/admin/Documents/Projects/Shelly/i2c_tools/build/bootloader-prefix/src/bootloader-stamp"
+  "/Users/admin/Documents/Projects/Shelly/klaviaturkata/build/bootloader"
+  "/Users/admin/Documents/Projects/Shelly/klaviaturkata/build/bootloader-prefix"
+  "/Users/admin/Documents/Projects/Shelly/klaviaturkata/build/bootloader-prefix/tmp"
+  "/Users/admin/Documents/Projects/Shelly/klaviaturkata/build/bootloader-prefix/src/bootloader-stamp"
+  "/Users/admin/Documents/Projects/Shelly/klaviaturkata/build/bootloader-prefix/src"
+  "/Users/admin/Documents/Projects/Shelly/klaviaturkata/build/bootloader-prefix/src/bootloader-stamp"
 )
 
 set(configSubDirs )
 foreach(subDir IN LISTS configSubDirs)
-    file(MAKE_DIRECTORY "/Users/admin/Documents/Projects/Shelly/i2c_tools/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
+    file(MAKE_DIRECTORY "/Users/admin/Documents/Projects/Shelly/klaviaturkata/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
 endforeach()
 if(cfgdir)
-  file(MAKE_DIRECTORY "/Users/admin/Documents/Projects/Shelly/i2c_tools/build/bootloader-prefix/src/bootloader-stamp${cfgdir}") # cfgdir has leading slash
+  file(MAKE_DIRECTORY "/Users/admin/Documents/Projects/Shelly/klaviaturkata/build/bootloader-prefix/src/bootloader-stamp${cfgdir}") # cfgdir has leading slash
 endif()

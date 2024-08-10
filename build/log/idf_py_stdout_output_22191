@@ -1,0 +1,548 @@
+[1/9] Performing build step for 'bootloader'
+[1/1] cd /Users/admin/Documents/Projects/Shelly/klaviaturkata/build/bootloader/esp-idf/esptool_py && /Users/admin/.espressif/python_env/idf5.3_py3.12_env/bin/python /Users/admin/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /Users/admin/Documents/Projects/Shelly/klaviaturkata/build/bootloader/bootloader.bin
+Bootloader binary size 0x6050 bytes. 0xfb0 bytes (14%) free.
+[2/9] No install step for 'bootloader'
+[3/9] Completed 'bootloader'
+[4/9] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/keypad/debugger.c.obj
+FAILED: esp-idf/main/CMakeFiles/__idf_main.dir/keypad/debugger.c.obj 
+/Users/admin/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc -DESP_PLATFORM -DIDF_VER=\"v5.3-dev-3225-g5a40bb8746-dirty\" -DMBEDTLS_CONFIG_FILE=\"mbedtls/esp_config.h\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -DUNITY_INCLUDE_CONFIG_H -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -I/Users/admin/Documents/Projects/Shelly/klaviaturkata/build/config -I/Users/admin/Documents/Projects/Shelly/klaviaturkata/main -I/Users/admin/esp/esp-idf/components/newlib/platform_include -I/Users/admin/esp/esp-idf/components/freertos/config/include -I/Users/admin/esp/esp-idf/components/freertos/config/include/freertos -I/Users/admin/esp/esp-idf/components/freertos/config/xtensa/include -I/Users/admin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include -I/Users/admin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -I/Users/admin/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos -I/Users/admin/esp/esp-idf/components/freertos/esp_additions/include -I/Users/admin/esp/esp-idf/components/esp_hw_support/include -I/Users/admin/esp/esp-idf/components/esp_hw_support/include/soc -I/Users/admin/esp/esp-idf/components/esp_hw_support/include/soc/esp32 -I/Users/admin/esp/esp-idf/components/esp_hw_support/dma/include -I/Users/admin/esp/esp-idf/components/esp_hw_support/ldo/include -I/Users/admin/esp/esp-idf/components/esp_hw_support/port/esp32/. -I/Users/admin/esp/esp-idf/components/esp_hw_support/port/esp32/include -I/Users/admin/esp/esp-idf/components/heap/include -I/Users/admin/esp/esp-idf/components/log/include -I/Users/admin/esp/esp-idf/components/soc/include -I/Users/admin/esp/esp-idf/components/soc/esp32 -I/Users/admin/esp/esp-idf/components/soc/esp32/include -I/Users/admin/esp/esp-idf/components/hal/platform_port/include -I/Users/admin/esp/esp-idf/components/hal/esp32/include -I/Users/admin/esp/esp-idf/components/hal/include -I/Users/admin/esp/esp-idf/components/esp_rom/include -I/Users/admin/esp/esp-idf/components/esp_rom/include/esp32 -I/Users/admin/esp/esp-idf/components/esp_rom/esp32 -I/Users/admin/esp/esp-idf/components/esp_common/include -I/Users/admin/esp/esp-idf/components/esp_system/include -I/Users/admin/esp/esp-idf/components/esp_system/port/soc -I/Users/admin/esp/esp-idf/components/esp_system/port/include/private -I/Users/admin/esp/esp-idf/components/xtensa/esp32/include -I/Users/admin/esp/esp-idf/components/xtensa/include -I/Users/admin/esp/esp-idf/components/xtensa/deprecated_include -I/Users/admin/esp/esp-idf/components/lwip/include -I/Users/admin/esp/esp-idf/components/lwip/include/apps -I/Users/admin/esp/esp-idf/components/lwip/include/apps/sntp -I/Users/admin/esp/esp-idf/components/lwip/lwip/src/include -I/Users/admin/esp/esp-idf/components/lwip/port/include -I/Users/admin/esp/esp-idf/components/lwip/port/freertos/include -I/Users/admin/esp/esp-idf/components/lwip/port/esp32xx/include -I/Users/admin/esp/esp-idf/components/lwip/port/esp32xx/include/arch -I/Users/admin/esp/esp-idf/components/lwip/port/esp32xx/include/sys -I/Users/admin/esp/esp-idf/examples/system/console/advanced/components/cmd_nvs -I/Users/admin/esp/esp-idf/components/console -I/Users/admin/esp/esp-idf/components/vfs/include -I/Users/admin/esp/esp-idf/components/esp_vfs_console/include -I/Users/admin/esp/esp-idf/components/nvs_flash/include -I/Users/admin/esp/esp-idf/components/spi_flash/include -I/Users/admin/esp/esp-idf/components/esp_partition/include -I/Users/admin/esp/esp-idf/examples/system/console/advanced/components/cmd_system -I/Users/admin/esp/esp-idf/components/driver/deprecated -I/Users/admin/esp/esp-idf/components/driver/i2c/include -I/Users/admin/esp/esp-idf/components/driver/touch_sensor/include -I/Users/admin/esp/esp-idf/components/driver/twai/include -I/Users/admin/esp/esp-idf/components/driver/touch_sensor/esp32/include -I/Users/admin/esp/esp-idf/components/esp_pm/include -I/Users/admin/esp/esp-idf/components/esp_ringbuf/include -I/Users/admin/esp/esp-idf/components/esp_driver_gpio/include -I/Users/admin/esp/esp-idf/components/esp_driver_pcnt/include -I/Users/admin/esp/esp-idf/components/esp_driver_gptimer/include -I/Users/admin/esp/esp-idf/components/esp_driver_spi/include -I/Users/admin/esp/esp-idf/components/esp_driver_mcpwm/include -I/Users/admin/esp/esp-idf/components/esp_driver_ana_cmpr/include -I/Users/admin/esp/esp-idf/components/esp_driver_i2s/include -I/Users/admin/esp/esp-idf/components/esp_driver_sdmmc/include -I/Users/admin/esp/esp-idf/components/sdmmc/include -I/Users/admin/esp/esp-idf/components/esp_driver_sdspi/include -I/Users/admin/esp/esp-idf/components/esp_driver_sdio/include -I/Users/admin/esp/esp-idf/components/esp_driver_dac/include -I/Users/admin/esp/esp-idf/components/esp_driver_rmt/include -I/Users/admin/esp/esp-idf/components/esp_driver_tsens/include -I/Users/admin/esp/esp-idf/components/esp_driver_sdm/include -I/Users/admin/esp/esp-idf/components/esp_driver_i2c/include -I/Users/admin/esp/esp-idf/components/esp_driver_uart/include -I/Users/admin/esp/esp-idf/components/esp_driver_ledc/include -I/Users/admin/esp/esp-idf/components/esp_driver_parlio/include -I/Users/admin/esp/esp-idf/components/esp_driver_usb_serial_jtag/include -I/Users/admin/esp/esp-idf/examples/system/console/advanced/components/cmd_wifi -I/Users/admin/esp/esp-idf/components/esp_wifi/include -I/Users/admin/esp/esp-idf/components/esp_wifi/wifi_apps/include -I/Users/admin/esp/esp-idf/components/esp_wifi/wifi_apps/nan_app/include -I/Users/admin/esp/esp-idf/components/esp_wifi/include/local -I/Users/admin/esp/esp-idf/components/esp_event/include -I/Users/admin/esp/esp-idf/components/esp_phy/include -I/Users/admin/esp/esp-idf/components/esp_phy/esp32/include -I/Users/admin/esp/esp-idf/components/esp_netif/include -I/Users/admin/esp/esp-idf/components/mbedtls/port/include -I/Users/admin/esp/esp-idf/components/mbedtls/mbedtls/include -I/Users/admin/esp/esp-idf/components/mbedtls/mbedtls/library -I/Users/admin/esp/esp-idf/components/mbedtls/esp_crt_bundle/include -I/Users/admin/esp/esp-idf/components/mbedtls/mbedtls/3rdparty/everest/include -I/Users/admin/esp/esp-idf/components/mbedtls/mbedtls/3rdparty/p256-m -I/Users/admin/esp/esp-idf/components/mbedtls/mbedtls/3rdparty/p256-m/p256-m -I/Users/admin/esp/esp-idf/components/esp_app_format/include -I/Users/admin/esp/esp-idf/components/esp_bootloader_format/include -I/Users/admin/esp/esp-idf/components/app_update/include -I/Users/admin/esp/esp-idf/components/bootloader_support/include -I/Users/admin/esp/esp-idf/components/bootloader_support/bootloader_flash/include -I/Users/admin/esp/esp-idf/components/efuse/include -I/Users/admin/esp/esp-idf/components/efuse/esp32/include -I/Users/admin/esp/esp-idf/components/esp_mm/include -I/Users/admin/esp/esp-idf/components/pthread/include -I/Users/admin/esp/esp-idf/components/esp_timer/include -I/Users/admin/esp/esp-idf/components/app_trace/include -I/Users/admin/esp/esp-idf/components/wpa_supplicant/include -I/Users/admin/esp/esp-idf/components/wpa_supplicant/port/include -I/Users/admin/esp/esp-idf/components/wpa_supplicant/esp_supplicant/include -I/Users/admin/esp/esp-idf/components/esp_coex/include -I/Users/admin/esp/esp-idf/components/unity/include -I/Users/admin/esp/esp-idf/components/unity/unity/src -I/Users/admin/esp/esp-idf/components/cmock/CMock/src -I/Users/admin/esp/esp-idf/components/http_parser -I/Users/admin/esp/esp-idf/components/esp-tls -I/Users/admin/esp/esp-idf/components/esp-tls/esp-tls-crypto -I/Users/admin/esp/esp-idf/components/esp_adc/include -I/Users/admin/esp/esp-idf/components/esp_adc/interface -I/Users/admin/esp/esp-idf/components/esp_adc/esp32/include -I/Users/admin/esp/esp-idf/components/esp_adc/deprecated/include -I/Users/admin/esp/esp-idf/components/esp_driver_cam/include -I/Users/admin/esp/esp-idf/components/esp_driver_cam/interface -I/Users/admin/esp/esp-idf/components/esp_driver_isp/include -I/Users/admin/esp/esp-idf/components/esp_driver_jpeg/include -I/Users/admin/esp/esp-idf/components/esp_eth/include -I/Users/admin/esp/esp-idf/components/esp_gdbstub/include -I/Users/admin/esp/esp-idf/components/esp_hid/include -I/Users/admin/esp/esp-idf/components/tcp_transport/include -I/Users/admin/esp/esp-idf/components/esp_http_client/include -I/Users/admin/esp/esp-idf/components/esp_http_server/include -I/Users/admin/esp/esp-idf/components/esp_https_ota/include -I/Users/admin/esp/esp-idf/components/esp_https_server/include -I/Users/admin/esp/esp-idf/components/esp_psram/include -I/Users/admin/esp/esp-idf/components/esp_lcd/include -I/Users/admin/esp/esp-idf/components/esp_lcd/interface -I/Users/admin/esp/esp-idf/components/protobuf-c/protobuf-c -I/Users/admin/esp/esp-idf/components/protocomm/include/common -I/Users/admin/esp/esp-idf/components/protocomm/include/security -I/Users/admin/esp/esp-idf/components/protocomm/include/transports -I/Users/admin/esp/esp-idf/components/protocomm/include/crypto/srp6a -I/Users/admin/esp/esp-idf/components/protocomm/proto-c -I/Users/admin/esp/esp-idf/components/esp_local_ctrl/include -I/Users/admin/esp/esp-idf/components/espcoredump/include -I/Users/admin/esp/esp-idf/components/espcoredump/include/port/xtensa -I/Users/admin/esp/esp-idf/components/wear_levelling/include -I/Users/admin/esp/esp-idf/components/fatfs/diskio -I/Users/admin/esp/esp-idf/components/fatfs/src -I/Users/admin/esp/esp-idf/components/fatfs/vfs -I/Users/admin/esp/esp-idf/components/idf_test/include -I/Users/admin/esp/esp-idf/components/idf_test/include/esp32 -I/Users/admin/esp/esp-idf/components/ieee802154/include -I/Users/admin/esp/esp-idf/components/json/cJSON -I/Users/admin/esp/esp-idf/components/mqtt/esp-mqtt/include -I/Users/admin/esp/esp-idf/components/nvs_sec_provider/include -I/Users/admin/esp/esp-idf/components/perfmon/include -I/Users/admin/esp/esp-idf/components/spiffs/include -I/Users/admin/esp/esp-idf/components/wifi_provisioning/include -mlongcalls -Wno-frame-address  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fno-shrink-wrap -fmacro-prefix-map=/Users/admin/Documents/Projects/Shelly/klaviaturkata=. -fmacro-prefix-map=/Users/admin/esp/esp-idf=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -std=gnu17 -Wno-old-style-declaration -MD -MT esp-idf/main/CMakeFiles/__idf_main.dir/keypad/debugger.c.obj -MF esp-idf/main/CMakeFiles/__idf_main.dir/keypad/debugger.c.obj.d -o esp-idf/main/CMakeFiles/__idf_main.dir/keypad/debugger.c.obj -c /Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c: In function 'btl_i2c_transfer':
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:12:19: error: implicit declaration of function 'BTL_FLASH_I2C_WRITE'; did you mean 'BTL_FLASH_I2C_ADDR'? [-Werror=implicit-function-declaration]
+   12 |             ret = BTL_FLASH_I2C_WRITE(i2c_addr, buf, len);
+      |                   ^~~~~~~~~~~~~~~~~~~
+      |                   BTL_FLASH_I2C_ADDR
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:15:19: error: implicit declaration of function 'BTL_FLASH_I2C_READ'; did you mean 'BTL_FLASH_I2C_ADDR'? [-Werror=implicit-function-declaration]
+   15 |             ret = BTL_FLASH_I2C_READ(i2c_addr, buf, len);
+      |                   ^~~~~~~~~~~~~~~~~~
+      |                   BTL_FLASH_I2C_ADDR
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:21:18: error: statement with no effect [-Werror=unused-value]
+   21 |         BTL_DEBUG("btl_i2c_transfer:i2c transfer error___\n");
+      |                  ^
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c: In function 'btl_read_fw':
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:47:18: error: statement with no effect [-Werror=unused-value]
+   47 |         BTL_DEBUG("btl_read_fw:i2c transfer error___\n");
+      |                  ^
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c: In function 'btl_soft_reset_switch_int_wakemode':
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:122:28: error: 'BTL_SLAVE_ADDR' undeclared (first use in this function)
+  122 |     ret = btl_i2c_transfer(BTL_SLAVE_ADDR, cmd,4,I2C_WRITE);
+      |                            ^~~~~~~~~~~~~~
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:122:28: note: each undeclared identifier is reported only once for each function it appears in
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:125:18: error: statement with no effect [-Werror=unused-value]
+  125 |         BTL_DEBUG("btl_soft_reset_switch_int_wakemode failed:i2c write flash error___\n");
+      |                  ^
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c: In function 'btl_enter_update_with_i2c':
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:147:28: error: 'BTL_SLAVE_ADDR' undeclared (first use in this function)
+  147 |     ret = btl_i2c_transfer(BTL_SLAVE_ADDR, cmd, sizeof(cmd), I2C_WRITE);
+      |                            ^~~~~~~~~~~~~~
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:150:18: error: statement with no effect [-Werror=unused-value]
+  150 |         BTL_DEBUG("btl_enter_update_with_i2c failed:send i2c cmd error___\r\n");
+      |                  ^
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:153:5: error: implicit declaration of function 'MDELAY' [-Werror=implicit-function-declaration]
+  153 |     MDELAY(50);
+      |     ^~~~~~
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c: In function 'btl_exit_update_with_i2c':
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:165:28: error: 'BTL_SLAVE_ADDR' undeclared (first use in this function)
+  165 |     ret = btl_i2c_transfer(BTL_SLAVE_ADDR, cmd, sizeof(cmd), I2C_WRITE);
+      |                            ^~~~~~~~~~~~~~
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:168:18: error: statement with no effect [-Werror=unused-value]
+  168 |         BTL_DEBUG("btl_exit_update_with_i2c failed:send 5a a5 error___\n");
+      |                  ^
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c: In function 'btl_check_version':
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:241:18: error: statement with no effect [-Werror=unused-value]
+  241 |         BTL_DEBUG("btl_check_version check PASS\n");
+      |                  ^
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:246:18: error: statement with no effect [-Werror=unused-value]
+  246 |         BTL_DEBUG("btl_check_version check FIAL\n");
+      |                  ^
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c: In function 'btl_get_fwArgPrj_id':
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:253:14: error: statement with no effect [-Werror=unused-value]
+  253 |     BTL_DEBUG("btl_get_fwArgPrj_id\n");
+      |              ^
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:254:24: error: 'BTL_SLAVE_ADDR' undeclared (first use in this function)
+  254 |     return btl_read_fw(BTL_SLAVE_ADDR,FwVersionReg, buf, 4);
+      |                        ^~~~~~~~~~~~~~
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c: In function 'btl_get_key_value':
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:259:17: error: 'BTL_SLAVE_ADDR' undeclared (first use in this function)
+  259 |     btl_read_fw(BTL_SLAVE_ADDR, KeyValueReg, value, 1);
+      |                 ^~~~~~~~~~~~~~
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c: In function 'btl_set_scan_mode':
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:268:22: error: 'BTL_SLAVE_ADDR' undeclared (first use in this function)
+  268 |     btl_i2c_transfer(BTL_SLAVE_ADDR, cmd, sizeof(cmd), I2C_WRITE);
+      |                      ^~~~~~~~~~~~~~
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c: In function 'btl_get_scan_mode':
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:275:17: error: 'BTL_SLAVE_ADDR' undeclared (first use in this function)
+  275 |     btl_read_fw(BTL_SLAVE_ADDR, ScanCtrlReg, &mode, 1);
+      |                 ^~~~~~~~~~~~~~
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c: In function 'btl_set_channel_select':
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:284:29: error: 'MAX_CHANNEL_NUM' undeclared (first use in this function)
+  284 |     if(Channel_Sel >= (1 << MAX_CHANNEL_NUM))
+      |                             ^~~~~~~~~~~~~~~
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:286:18: error: statement with no effect [-Werror=unused-value]
+  286 |         BTL_DEBUG("btl_set_channel_sel:channel select is over MAX_CHANNEL_NUM\n");
+      |                  ^
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:296:22: error: 'BTL_SLAVE_ADDR' undeclared (first use in this function)
+  296 |     btl_i2c_transfer(BTL_SLAVE_ADDR, data, sizeof(data), I2C_WRITE);
+      |                      ^~~~~~~~~~~~~~
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:298:8: error: implicit declaration of function 'memcmp' [-Werror=implicit-function-declaration]
+  298 |     if(memcmp(temp, &data[1], sizeof(temp)) != 0)
+      |        ^~~~~~
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:4:1: note: include '<string.h>' or provide a declaration of 'memcmp'
+    3 | #include "common.h"
+  +++ |+#include <string.h>
+    4 | 
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:300:18: error: statement with no effect [-Werror=unused-value]
+  300 |         BTL_DEBUG("Channel select write Fail\n");
+      |                  ^
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:304:14: error: statement with no effect [-Werror=unused-value]
+  304 |     BTL_DEBUG("Channel select write Ok\n");
+      |              ^
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c: In function 'btl_set_work_mode_gain_adj':
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:309:23: error: 'MAX_CHANNEL_NUM' undeclared (first use in this function)
+  309 |     unsigned char cmd[MAX_CHANNEL_NUM+1] = {0x00};
+      |                       ^~~~~~~~~~~~~~~
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:312:5: error: implicit declaration of function 'memcpy' [-Werror=implicit-function-declaration]
+  312 |     memcpy(&cmd[1],gain,MAX_CHANNEL_NUM);
+      |     ^~~~~~
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:312:5: note: 'memcpy' is defined in header '<string.h>'; did you forget to '#include <string.h>'?
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:313:22: error: 'BTL_SLAVE_ADDR' undeclared (first use in this function)
+  313 |     btl_i2c_transfer(BTL_SLAVE_ADDR, cmd, sizeof(cmd), I2C_WRITE);
+      |                      ^~~~~~~~~~~~~~
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:309:19: warning: unused variable 'cmd' [-Wunused-variable]
+  309 |     unsigned char cmd[MAX_CHANNEL_NUM+1] = {0x00};
+      |                   ^~~
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c: In function 'btl_get_work_mode_gain_adj':
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:318:17: error: 'BTL_SLAVE_ADDR' undeclared (first use in this function)
+  318 |     btl_read_fw(BTL_SLAVE_ADDR, Ch01CfAdjReg, gain, MAX_CHANNEL_NUM);
+      |                 ^~~~~~~~~~~~~~
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:318:53: error: 'MAX_CHANNEL_NUM' undeclared (first use in this function)
+  318 |     btl_read_fw(BTL_SLAVE_ADDR, Ch01CfAdjReg, gain, MAX_CHANNEL_NUM);
+      |                                                     ^~~~~~~~~~~~~~~
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c: In function 'btl_set_low_power_mode_gain':
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:330:22: error: 'BTL_SLAVE_ADDR' undeclared (first use in this function)
+  330 |     btl_i2c_transfer(BTL_SLAVE_ADDR, cmd, sizeof(cmd), I2C_WRITE);
+      |                      ^~~~~~~~~~~~~~
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c: In function 'btl_get_low_power_mode_gain':
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:335:17: error: 'BTL_SLAVE_ADDR' undeclared (first use in this function)
+  335 |     btl_read_fw(BTL_SLAVE_ADDR, Sc3CfReg, gain, 4);
+      |                 ^~~~~~~~~~~~~~
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c: In function 'btl_soft_reset':
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:342:22: error: 'BTL_SLAVE_ADDR' undeclared (first use in this function)
+  342 |     btl_i2c_transfer(BTL_SLAVE_ADDR, cmd, sizeof(cmd), I2C_WRITE);
+      |                      ^~~~~~~~~~~~~~
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c: In function 'btl_get_key_diff_value':
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:347:24: error: 'MAX_CHANNEL_NUM' undeclared (first use in this function)
+  347 |     unsigned char data[MAX_CHANNEL_NUM * 2] = {0};
+      |                        ^~~~~~~~~~~~~~~
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:351:17: error: 'BTL_SLAVE_ADDR' undeclared (first use in this function)
+  351 |     btl_read_fw(BTL_SLAVE_ADDR, KeyDiffReg, data, keyNum * 2);
+      |                 ^~~~~~~~~~~~~~
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:348:11: warning: unused variable 'diff' [-Wunused-variable]
+  348 |     short diff[MAX_CHANNEL_NUM] = {0};
+      |           ^~~~
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:347:19: warning: unused variable 'data' [-Wunused-variable]
+  347 |     unsigned char data[MAX_CHANNEL_NUM * 2] = {0};
+      |                   ^~~~
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c: In function 'btl_set_low_power_mode':
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:367:22: error: 'BTL_SLAVE_ADDR' undeclared (first use in this function)
+  367 |     btl_i2c_transfer(BTL_SLAVE_ADDR, cmd, sizeof(cmd), I2C_WRITE);
+      |                      ^~~~~~~~~~~~~~
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c: In function 'btl_get_low_power_mode':
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:374:17: error: 'BTL_SLAVE_ADDR' undeclared (first use in this function)
+  374 |     btl_read_fw(BTL_SLAVE_ADDR, LowPowerEnReg, &mode, 1);
+      |                 ^~~~~~~~~~~~~~
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c: In function 'btl_set_auto_enter_low_power_mode_time':
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:384:22: error: 'BTL_SLAVE_ADDR' undeclared (first use in this function)
+  384 |     btl_i2c_transfer(BTL_SLAVE_ADDR, cmd, sizeof(cmd), I2C_WRITE);
+      |                      ^~~~~~~~~~~~~~
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c: In function 'btl_get_auto_enter_low_power_mode_time':
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:391:17: error: 'BTL_SLAVE_ADDR' undeclared (first use in this function)
+  391 |     btl_read_fw(BTL_SLAVE_ADDR, EnterTimeReg, &second, 1);
+      |                 ^~~~~~~~~~~~~~
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c: In function 'btl_set_low_power_mode_idle_time':
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:402:22: error: 'BTL_SLAVE_ADDR' undeclared (first use in this function)
+  402 |     btl_i2c_transfer(BTL_SLAVE_ADDR, cmd, sizeof(cmd), I2C_WRITE);
+      |                      ^~~~~~~~~~~~~~
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c: In function 'btl_get_low_power_mode_idle_time':
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:409:17: error: 'BTL_SLAVE_ADDR' undeclared (first use in this function)
+  409 |     btl_read_fw(BTL_SLAVE_ADDR, IdleTimeReg, &timems, 1);
+      |                 ^~~~~~~~~~~~~~
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c: In function 'btl_set_lp_scan_mode':
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:419:22: error: 'BTL_SLAVE_ADDR' undeclared (first use in this function)
+  419 |     btl_i2c_transfer(BTL_SLAVE_ADDR, cmd, sizeof(cmd), I2C_WRITE);
+      |                      ^~~~~~~~~~~~~~
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c: In function 'btl_get_lp_scan_mode':
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:426:17: error: 'BTL_SLAVE_ADDR' undeclared (first use in this function)
+  426 |     btl_read_fw(BTL_SLAVE_ADDR, MntScanModeReg, &mode, 1);
+      |                 ^~~~~~~~~~~~~~
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c: In function 'btl_calibrate':
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:440:22: error: 'BTL_SLAVE_ADDR' undeclared (first use in this function)
+  440 |     btl_i2c_transfer(BTL_SLAVE_ADDR, cmd, sizeof(cmd), I2C_WRITE);
+      |                      ^~~~~~~~~~~~~~
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:457:18: error: statement with no effect [-Werror=unused-value]
+  457 |         BTL_DEBUG("Calibrate IC failed!\n");
+      |                  ^
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:461:42: error: left-hand operand of comma expression has no effect [-Werror=unused-value]
+  461 |         BTL_DEBUG("Calibrate IC Ok:%d!\n", retry);
+      |                                          ^
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:461:18: error: statement with no effect [-Werror=unused-value]
+  461 |         BTL_DEBUG("Calibrate IC Ok:%d!\n", retry);
+      |                  ^
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c: In function 'btl_get_calibrate_state':
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:469:17: error: 'BTL_SLAVE_ADDR' undeclared (first use in this function)
+  469 |     btl_read_fw(BTL_SLAVE_ADDR, &ClbEnReg, &flag, 1);
+      |                 ^~~~~~~~~~~~~~
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:469:33: error: lvalue required as unary '&' operand
+  469 |     btl_read_fw(BTL_SLAVE_ADDR, &ClbEnReg, &flag, 1);
+      |                                 ^
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c: In function 'btl_set_wakeup_mode':
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:486:26: error: 'BTL_SLAVE_ADDR' undeclared (first use in this function)
+  486 |         btl_i2c_transfer(BTL_SLAVE_ADDR, cmd, sizeof(cmd), I2C_WRITE);
+      |                          ^~~~~~~~~~~~~~
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c: In function 'btl_get_wakeup_mode':
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:492:21: error: 'BTL_SLAVE_ADDR' undeclared (first use in this function)
+  492 |         btl_read_fw(BTL_SLAVE_ADDR, WakeupModeReg, &mode, 1);
+      |                     ^~~~~~~~~~~~~~
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:493:16: error: 'return' with a value, in function returning void [-Werror=return-type]
+  493 |         return mode;
+      |                ^~~~
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:489:6: note: declared here
+  489 | void btl_get_wakeup_mode(void)
+      |      ^~~~~~~~~~~~~~~~~~~
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c: In function 'btl_get_fw_checksum':
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:561:14: error: statement with no effect [-Werror=unused-value]
+  561 |     BTL_DEBUG("btl_get_fw_checksum\n");
+      |              ^
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:565:28: error: 'BTL_SLAVE_ADDR' undeclared (first use in this function)
+  565 |     ret = btl_i2c_transfer(BTL_SLAVE_ADDR, buf,2,I2C_WRITE);
+      |                            ^~~~~~~~~~~~~~
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:568:18: error: statement with no effect [-Werror=unused-value]
+  568 |         BTL_DEBUG("btl_get_fw_checksum:write checksum cmd error___\n");
+      |                  ^
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:576:18: error: statement with no effect [-Werror=unused-value]
+  576 |         BTL_DEBUG("btl_get_fw_checksum:read checksum error___\n");
+      |                  ^
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:588:22: error: statement with no effect [-Werror=unused-value]
+  588 |             BTL_DEBUG("btl_get_fw_checksum:read checksum error___\n");
+      |                      ^
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:597:18: error: statement with no effect [-Werror=unused-value]
+  597 |         BTL_DEBUG("btl_get_fw_checksum:read checksum fail___\n");
+      |                  ^
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c: In function 'btl_erase_flash':
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:639:14: error: statement with no effect [-Werror=unused-value]
+  639 |     BTL_DEBUG("btl_erase_flash\n");
+      |              ^
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c: In function 'btl_write_flash_no_blm18':
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:649:29: error: 'FLASH_WSIZE' undeclared (first use in this function); did you mean 'FLASH_PAGE_SIZE'?
+  649 |     unsigned char cmd_buf[6+FLASH_WSIZE];
+      |                             ^~~~~~~~~~~
+      |                             FLASH_PAGE_SIZE
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:653:14: error: statement with no effect [-Werror=unused-value]
+  653 |     BTL_DEBUG("btl_write_flash_no_blm18\n");
+      |              ^
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:657:18: error: statement with no effect [-Werror=unused-value]
+  657 |         BTL_DEBUG("___write flash len is 0x00,return___\n");
+      |                  ^
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:665:18: error: statement with no effect [-Werror=unused-value]
+  665 |         BTL_DEBUG("___write flash end addr is overflow,return___\n");
+      |                  ^
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:681:18: error: statement with no effect [-Werror=unused-value]
+  681 |         BTL_DEBUG("i2c transfer error___\n");
+      |                  ^
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:649:19: warning: unused variable 'cmd_buf' [-Wunused-variable]
+  649 |     unsigned char cmd_buf[6+FLASH_WSIZE];
+      |                   ^~~~~~~
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c: In function 'btl_write_flash_blm18':
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:690:29: error: 'FLASH_WSIZE' undeclared (first use in this function); did you mean 'FLASH_PAGE_SIZE'?
+  690 |     unsigned char cmd_buf[8+FLASH_WSIZE];
+      |                             ^~~~~~~~~~~
+      |                             FLASH_PAGE_SIZE
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:694:14: error: statement with no effect [-Werror=unused-value]
+  694 |     BTL_DEBUG("btl_write_flash_blm18\n");
+      |              ^
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:698:18: error: statement with no effect [-Werror=unused-value]
+  698 |         BTL_DEBUG("___write flash len is 0x00,return___\n");
+      |                  ^
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:706:18: error: statement with no effect [-Werror=unused-value]
+  706 |         BTL_DEBUG("___write flash end addr is overflow,return___\n");
+      |                  ^
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:724:18: error: statement with no effect [-Werror=unused-value]
+  724 |         BTL_DEBUG("i2c transfer error___\n");
+      |                  ^
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:690:19: warning: unused variable 'cmd_buf' [-Wunused-variable]
+  690 |     unsigned char cmd_buf[8+FLASH_WSIZE];
+      |                   ^~~~~~~
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c: In function 'btl_read_flash_no_blm18':
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:750:12: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  750 |     if(ret < 0)
+      |            ^
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:752:18: error: statement with no effect [-Werror=unused-value]
+  752 |         BTL_DEBUG("btl_read_flash_no_blm18:i2c transfer write error\n");
+      |                  ^
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:756:12: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  756 |     if(ret < 0)
+      |            ^
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:758:18: error: statement with no effect [-Werror=unused-value]
+  758 |         BTL_DEBUG("btl_read_flash_no_blm18:i2c transfer read error\n");
+      |                  ^
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c: In function 'btl_read_flash_blm18':
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:781:12: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  781 |     if(ret < 0)
+      |            ^
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:783:18: error: statement with no effect [-Werror=unused-value]
+  783 |         BTL_DEBUG("btl_read_flash_blm18:i2c transfer write error\n");
+      |                  ^
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:787:12: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  787 |     if(ret < 0)
+      |            ^
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:789:18: error: statement with no effect [-Werror=unused-value]
+  789 |         BTL_DEBUG("btl_read_flash_blm18:i2c transfer read error\n");
+      |                  ^
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c: In function 'btl_download_fw_for_self_ctp':
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:806:9: error: 'ussigned' undeclared (first use in this function)
+  806 |         ussigned char chipID = 0x00;
+      |         ^~~~~~~~
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:806:17: error: expected ';' before 'char'
+  806 |         ussigned char chipID = 0x00;
+      |                 ^~~~~
+      |                 ;
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:808:14: error: statement with no effect [-Werror=unused-value]
+  808 |     BTL_DEBUG("btl_download_fw_for_self_ctp\n");
+      |              ^
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:812:58: error: left-hand operand of comma expression has no effect [-Werror=unused-value]
+  812 |     BTL_DEBUG("btl_download_fw:verifyBuf = %x %x %x %x\n",verifyBuf[0],verifyBuf[1],verifyBuf[2],verifyBuf[3]);
+      |                                                          ^
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:812:71: error: left-hand operand of comma expression has no effect [-Werror=unused-value]
+  812 |     BTL_DEBUG("btl_download_fw:verifyBuf = %x %x %x %x\n",verifyBuf[0],verifyBuf[1],verifyBuf[2],verifyBuf[3]);
+      |                                                                       ^
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:812:84: error: left-hand operand of comma expression has no effect [-Werror=unused-value]
+  812 |     BTL_DEBUG("btl_download_fw:verifyBuf = %x %x %x %x\n",verifyBuf[0],verifyBuf[1],verifyBuf[2],verifyBuf[3]);
+      |                                                                                    ^
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:812:97: error: left-hand operand of comma expression has no effect [-Werror=unused-value]
+  812 |     BTL_DEBUG("btl_download_fw:verifyBuf = %x %x %x %x\n",verifyBuf[0],verifyBuf[1],verifyBuf[2],verifyBuf[3]);
+      |                                                                                                 ^
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:812:97: error: statement with no effect [-Werror=unused-value]
+  812 |     BTL_DEBUG("btl_download_fw:verifyBuf = %x %x %x %x\n",verifyBuf[0],verifyBuf[1],verifyBuf[2],verifyBuf[3]);
+      |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:816:18: error: statement with no effect [-Werror=unused-value]
+  816 |         BTL_DEBUG("___erase flash fail___\n");
+      |                  ^
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:826:19: error: 'FLASH_WSIZE' undeclared (first use in this function); did you mean 'FLASH_PAGE_SIZE'?
+  826 |         if(size > FLASH_WSIZE)
+      |                   ^~~~~~~~~~~
+      |                   FLASH_PAGE_SIZE
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c: In function 'btl_read_vertify':
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:924:27: error: 'BTL_SLAVE_ADDR' undeclared (first use in this function)
+  924 |         ret = btl_read_fw(BTL_SLAVE_ADDR, cmd, vertify, sizeof(vertify));
+      |                           ^~~~~~~~~~~~~~
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:927:18: error: statement with no effect [-Werror=unused-value]
+  927 |         BTL_DEBUG("btl_read_vertify: read fail\n");
+      |                  ^
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:928:26: error: expected ';' before '}' token
+  928 |                 return -1
+      |                          ^
+      |                          ;
+  929 |     }
+      |     ~                     
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c: In function 'btl_read_flash_vertify':
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:941:56: error: left-hand operand of comma expression has no effect [-Werror=unused-value]
+  941 |     BTL_DEBUG("btl_read_flash_vertify: vertify:%x %x\n",vertify[0],vertify[1]);
+      |                                                        ^
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:941:67: error: left-hand operand of comma expression has no effect [-Werror=unused-value]
+  941 |     BTL_DEBUG("btl_read_flash_vertify: vertify:%x %x\n",vertify[0],vertify[1]);
+      |                                                                   ^
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:941:67: error: statement with no effect [-Werror=unused-value]
+  941 |     BTL_DEBUG("btl_read_flash_vertify: vertify:%x %x\n",vertify[0],vertify[1]);
+      |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:943:5: error: 'SET_WAKEUP_LOW' undeclared (first use in this function)
+  943 |     SET_WAKEUP_LOW;
+      |     ^~~~~~~~~~~~~~
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:950:22: error: statement with no effect [-Werror=unused-value]
+  950 |             BTL_DEBUG("btl_write_flash_vertify: read fail\n");
+      |                      ^
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:964:5: error: 'SET_WAKEUP_HIGH' undeclared (first use in this function)
+  964 |     SET_WAKEUP_HIGH;
+      |     ^~~~~~~~~~~~~~~
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c: In function 'btl_write_flash_vertify':
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:976:57: error: left-hand operand of comma expression has no effect [-Werror=unused-value]
+  976 |     BTL_DEBUG("btl_write_flash_vertify: vertify:%x %x\n",vertify[0],vertify[1]);
+      |                                                         ^
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:976:68: error: left-hand operand of comma expression has no effect [-Werror=unused-value]
+  976 |     BTL_DEBUG("btl_write_flash_vertify: vertify:%x %x\n",vertify[0],vertify[1]);
+      |                                                                    ^
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:976:68: error: statement with no effect [-Werror=unused-value]
+  976 |     BTL_DEBUG("btl_write_flash_vertify: vertify:%x %x\n",vertify[0],vertify[1]);
+      |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:978:5: error: 'SET_WAKEUP_LOW' undeclared (first use in this function)
+  978 |     SET_WAKEUP_LOW;
+      |     ^~~~~~~~~~~~~~
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:985:22: error: statement with no effect [-Werror=unused-value]
+  985 |             BTL_DEBUG("btl_write_flash_vertify: write fail\n");
+      |                      ^
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:994:22: error: statement with no effect [-Werror=unused-value]
+  994 |             BTL_DEBUG("btl_write_flash_vertify: read fail\n");
+      |                      ^
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:1008:5: error: 'SET_WAKEUP_HIGH' undeclared (first use in this function)
+ 1008 |     SET_WAKEUP_HIGH;
+      |     ^~~~~~~~~~~~~~~
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c: In function 'btl_update_flash_for_self_ctp':
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:1022:9: error: 'SET_WAKEUP_LOW' undeclared (first use in this function)
+ 1022 |         SET_WAKEUP_LOW;
+      |         ^~~~~~~~~~~~~~
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:1028:100: error: left-hand operand of comma expression has no effect [-Werror=unused-value]
+ 1028 |             BTL_DEBUG("btl_update_flash_for_self_ctp:btl_download_fw_for_self_ctp error retry=%d\n",retry);
+      |                                                                                                    ^
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:1028:22: error: statement with no effect [-Werror=unused-value]
+ 1028 |             BTL_DEBUG("btl_update_flash_for_self_ctp:btl_download_fw_for_self_ctp error retry=%d\n",retry);
+      |                      ^
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:1034:9: error: 'SET_WAKEUP_HIGH' undeclared (first use in this function)
+ 1034 |         SET_WAKEUP_HIGH;
+      |         ^~~~~~~~~~~~~~~
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:1039:92: error: left-hand operand of comma expression has no effect [-Werror=unused-value]
+ 1039 |         BTL_DEBUG("btl_download_fw_for_self_ctp:fw checksum = 0x%x,fw_bin_checksum =0x%x\n",fw_checksum, fw_bin_checksum);
+      |                                                                                            ^
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:1039:104: error: left-hand operand of comma expression has no effect [-Werror=unused-value]
+ 1039 |         BTL_DEBUG("btl_download_fw_for_self_ctp:fw checksum = 0x%x,fw_bin_checksum =0x%x\n",fw_checksum, fw_bin_checksum);
+      |                                                                                                        ^
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:1039:18: error: statement with no effect [-Werror=unused-value]
+ 1039 |         BTL_DEBUG("btl_download_fw_for_self_ctp:fw checksum = 0x%x,fw_bin_checksum =0x%x\n",fw_checksum, fw_bin_checksum);
+      |                  ^
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:1043:22: error: statement with no effect [-Werror=unused-value]
+ 1043 |             BTL_DEBUG("btl_download_fw_for_self_ctp:btl_get_fw_checksum error");
+      |                      ^
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:1062:18: error: statement with no effect [-Werror=unused-value]
+ 1062 |         BTL_DEBUG("btl_download_fw_for_self_ctp error\n");
+      |                  ^
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:1066:14: error: statement with no effect [-Werror=unused-value]
+ 1066 |     BTL_DEBUG("btl_download_fw_for_self_ctp success___\n");
+      |              ^
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c: In function 'choose_update_type_for_self_ctp':
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:1077:18: error: statement with no effect [-Werror=unused-value]
+ 1077 |         BTL_DEBUG("Update case 0:FW_ARG_UPDATE\n");
+      |                  ^
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:1082:18: error: statement with no effect [-Werror=unused-value]
+ 1082 |         BTL_DEBUG("Update case 1:NONE_UPDATE\n");
+      |                  ^
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c: In function 'btl_update_fw_for_self_ctp':
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:1097:14: error: statement with no effect [-Werror=unused-value]
+ 1097 |     BTL_DEBUG("btl_update_fw_for_self_ctp start\n");
+      |              ^
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:1104:111: error: left-hand operand of comma expression has no effect [-Werror=unused-value]
+ 1104 |         BTL_DEBUG("btl_update_fw_for_self_ctp:This is blank IC ret=%x fwID=%x argID=%x prjID=%x debugVer=%x\n",ret,fwArgPrjID[0],fwArgPrjID[1], fwArgPrjID[2], fwArgPrjID[3]);
+      |                                                                                                               ^
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:1104:115: error: left-hand operand of comma expression has no effect [-Werror=unused-value]
+ 1104 |         BTL_DEBUG("btl_update_fw_for_self_ctp:This is blank IC ret=%x fwID=%x argID=%x prjID=%x debugVer=%x\n",ret,fwArgPrjID[0],fwArgPrjID[1], fwArgPrjID[2], fwArgPrjID[3]);
+      |                                                                                                                   ^
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:1104:129: error: left-hand operand of comma expression has no effect [-Werror=unused-value]
+ 1104 |         BTL_DEBUG("btl_update_fw_for_self_ctp:This is blank IC ret=%x fwID=%x argID=%x prjID=%x debugVer=%x\n",ret,fwArgPrjID[0],fwArgPrjID[1], fwArgPrjID[2], fwArgPrjID[3]);
+      |                                                                                                                                 ^
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:1104:143: error: left-hand operand of comma expression has no effect [-Werror=unused-value]
+ 1104 |         BTL_DEBUG("btl_update_fw_for_self_ctp:This is blank IC ret=%x fwID=%x argID=%x prjID=%x debugVer=%x\n",ret,fwArgPrjID[0],fwArgPrjID[1], fwArgPrjID[2], fwArgPrjID[3]);
+      |                                                                                                                                               ^
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:1104:158: error: left-hand operand of comma expression has no effect [-Werror=unused-value]
+ 1104 |         BTL_DEBUG("btl_update_fw_for_self_ctp:This is blank IC ret=%x fwID=%x argID=%x prjID=%x debugVer=%x\n",ret,fwArgPrjID[0],fwArgPrjID[1], fwArgPrjID[2], fwArgPrjID[3]);
+      |                                                                                                                                                              ^
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:1104:158: error: statement with no effect [-Werror=unused-value]
+ 1104 |         BTL_DEBUG("btl_update_fw_for_self_ctp:This is blank IC ret=%x fwID=%x argID=%x prjID=%x debugVer=%x\n",ret,fwArgPrjID[0],fwArgPrjID[1], fwArgPrjID[2], fwArgPrjID[3]);
+      |                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:1110:126: error: left-hand operand of comma expression has no effect [-Werror=unused-value]
+ 1110 |         BTL_DEBUG("btl_update_fw_for_self_ctp:ret = %x fwArgPrjID[0]=%x fwArgPrjID[1]=%x fwArgPrjID[2]=%x fwArgPrjID[3]=%x\n",ret,fwArgPrjID[0],fwArgPrjID[1], fwArgPrjID[2], fwArgPrjID[3]);
+      |                                                                                                                              ^
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:1110:130: error: left-hand operand of comma expression has no effect [-Werror=unused-value]
+ 1110 |         BTL_DEBUG("btl_update_fw_for_self_ctp:ret = %x fwArgPrjID[0]=%x fwArgPrjID[1]=%x fwArgPrjID[2]=%x fwArgPrjID[3]=%x\n",ret,fwArgPrjID[0],fwArgPrjID[1], fwArgPrjID[2], fwArgPrjID[3]);
+      |                                                                                                                                  ^
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:1110:144: error: left-hand operand of comma expression has no effect [-Werror=unused-value]
+ 1110 |         BTL_DEBUG("btl_update_fw_for_self_ctp:ret = %x fwArgPrjID[0]=%x fwArgPrjID[1]=%x fwArgPrjID[2]=%x fwArgPrjID[3]=%x\n",ret,fwArgPrjID[0],fwArgPrjID[1], fwArgPrjID[2], fwArgPrjID[3]);
+      |                                                                                                                                                ^
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:1110:158: error: left-hand operand of comma expression has no effect [-Werror=unused-value]
+ 1110 |         BTL_DEBUG("btl_update_fw_for_self_ctp:ret = %x fwArgPrjID[0]=%x fwArgPrjID[1]=%x fwArgPrjID[2]=%x fwArgPrjID[3]=%x\n",ret,fwArgPrjID[0],fwArgPrjID[1], fwArgPrjID[2], fwArgPrjID[3]);
+      |                                                                                                                                                              ^
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:1110:173: error: left-hand operand of comma expression has no effect [-Werror=unused-value]
+ 1110 |         BTL_DEBUG("btl_update_fw_for_self_ctp:ret = %x fwArgPrjID[0]=%x fwArgPrjID[1]=%x fwArgPrjID[2]=%x fwArgPrjID[3]=%x\n",ret,fwArgPrjID[0],fwArgPrjID[1], fwArgPrjID[2], fwArgPrjID[3]);
+      |                                                                                                                                                                             ^
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:1110:173: error: statement with no effect [-Werror=unused-value]
+ 1110 |         BTL_DEBUG("btl_update_fw_for_self_ctp:ret = %x fwArgPrjID[0]=%x fwArgPrjID[1]=%x fwArgPrjID[2]=%x fwArgPrjID[3]=%x\n",ret,fwArgPrjID[0],fwArgPrjID[1], fwArgPrjID[2], fwArgPrjID[3]);
+      |                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:1113:140: error: left-hand operand of comma expression has no effect [-Werror=unused-value]
+ 1113 |     BTL_DEBUG("isBlank = %d  ver1 = %d ver2 = %d ver3 = %d ver4 = %d binVer1 = %d binVer2 = %d binVer3 = %d binVer4 = %d specificAddr = %x", isBlank,fwArgPrjID[0],fwArgPrjID[1],fwArgPrjID[2],fwArgPrjID[3],fw_data[BTL_ARGUMENT_BASE_OFFSET+BTL_FWVER_MAIN_OFFSET],fw_data[BTL_ARGUMENT_BASE_OFFSET + BTL_FWVER_ARGU_OFFSET],fw_data[BTL_ARGUMENT_BASE_OFFSET + BTL_PROJECT_ID_OFFSET],fw_data[BTL_ARGUMENT_BASE_OFFSET + BTL_FWVER_DEBUG_OFFSET], BTL_ARGUMENT_BASE_OFFSET);
+      |                                                                                                                                            ^
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:1113:149: error: left-hand operand of comma expression has no effect [-Werror=unused-value]
+ 1113 |     BTL_DEBUG("isBlank = %d  ver1 = %d ver2 = %d ver3 = %d ver4 = %d binVer1 = %d binVer2 = %d binVer3 = %d binVer4 = %d specificAddr = %x", isBlank,fwArgPrjID[0],fwArgPrjID[1],fwArgPrjID[2],fwArgPrjID[3],fw_data[BTL_ARGUMENT_BASE_OFFSET+BTL_FWVER_MAIN_OFFSET],fw_data[BTL_ARGUMENT_BASE_OFFSET + BTL_FWVER_ARGU_OFFSET],fw_data[BTL_ARGUMENT_BASE_OFFSET + BTL_PROJECT_ID_OFFSET],fw_data[BTL_ARGUMENT_BASE_OFFSET + BTL_FWVER_DEBUG_OFFSET], BTL_ARGUMENT_BASE_OFFSET);
+      |                                                                                                                                                     ^
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:1113:163: error: left-hand operand of comma expression has no effect [-Werror=unused-value]
+ 1113 |     BTL_DEBUG("isBlank = %d  ver1 = %d ver2 = %d ver3 = %d ver4 = %d binVer1 = %d binVer2 = %d binVer3 = %d binVer4 = %d specificAddr = %x", isBlank,fwArgPrjID[0],fwArgPrjID[1],fwArgPrjID[2],fwArgPrjID[3],fw_data[BTL_ARGUMENT_BASE_OFFSET+BTL_FWVER_MAIN_OFFSET],fw_data[BTL_ARGUMENT_BASE_OFFSET + BTL_FWVER_ARGU_OFFSET],fw_data[BTL_ARGUMENT_BASE_OFFSET + BTL_PROJECT_ID_OFFSET],fw_data[BTL_ARGUMENT_BASE_OFFSET + BTL_FWVER_DEBUG_OFFSET], BTL_ARGUMENT_BASE_OFFSET);
+      |                                                                                                                                                                   ^
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:1113:177: error: left-hand operand of comma expression has no effect [-Werror=unused-value]
+ 1113 |     BTL_DEBUG("isBlank = %d  ver1 = %d ver2 = %d ver3 = %d ver4 = %d binVer1 = %d binVer2 = %d binVer3 = %d binVer4 = %d specificAddr = %x", isBlank,fwArgPrjID[0],fwArgPrjID[1],fwArgPrjID[2],fwArgPrjID[3],fw_data[BTL_ARGUMENT_BASE_OFFSET+BTL_FWVER_MAIN_OFFSET],fw_data[BTL_ARGUMENT_BASE_OFFSET + BTL_FWVER_ARGU_OFFSET],fw_data[BTL_ARGUMENT_BASE_OFFSET + BTL_PROJECT_ID_OFFSET],fw_data[BTL_ARGUMENT_BASE_OFFSET + BTL_FWVER_DEBUG_OFFSET], BTL_ARGUMENT_BASE_OFFSET);
+      |                                                                                                                                                                                 ^
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:1113:191: error: left-hand operand of comma expression has no effect [-Werror=unused-value]
+ 1113 |     BTL_DEBUG("isBlank = %d  ver1 = %d ver2 = %d ver3 = %d ver4 = %d binVer1 = %d binVer2 = %d binVer3 = %d binVer4 = %d specificAddr = %x", isBlank,fwArgPrjID[0],fwArgPrjID[1],fwArgPrjID[2],fwArgPrjID[3],fw_data[BTL_ARGUMENT_BASE_OFFSET+BTL_FWVER_MAIN_OFFSET],fw_data[BTL_ARGUMENT_BASE_OFFSET + BTL_FWVER_ARGU_OFFSET],fw_data[BTL_ARGUMENT_BASE_OFFSET + BTL_PROJECT_ID_OFFSET],fw_data[BTL_ARGUMENT_BASE_OFFSET + BTL_FWVER_DEBUG_OFFSET], BTL_ARGUMENT_BASE_OFFSET);
+      |                                                                                                                                                                                               ^
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:1113:205: error: left-hand operand of comma expression has no effect [-Werror=unused-value]
+ 1113 |     BTL_DEBUG("isBlank = %d  ver1 = %d ver2 = %d ver3 = %d ver4 = %d binVer1 = %d binVer2 = %d binVer3 = %d binVer4 = %d specificAddr = %x", isBlank,fwArgPrjID[0],fwArgPrjID[1],fwArgPrjID[2],fwArgPrjID[3],fw_data[BTL_ARGUMENT_BASE_OFFSET+BTL_FWVER_MAIN_OFFSET],fw_data[BTL_ARGUMENT_BASE_OFFSET + BTL_FWVER_ARGU_OFFSET],fw_data[BTL_ARGUMENT_BASE_OFFSET + BTL_PROJECT_ID_OFFSET],fw_data[BTL_ARGUMENT_BASE_OFFSET + BTL_FWVER_DEBUG_OFFSET], BTL_ARGUMENT_BASE_OFFSET);
+      |                                                                                                                                                                                                             ^
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:1113:261: error: left-hand operand of comma expression has no effect [-Werror=unused-value]
+ 1113 |     BTL_DEBUG("isBlank = %d  ver1 = %d ver2 = %d ver3 = %d ver4 = %d binVer1 = %d binVer2 = %d binVer3 = %d binVer4 = %d specificAddr = %x", isBlank,fwArgPrjID[0],fwArgPrjID[1],fwArgPrjID[2],fwArgPrjID[3],fw_data[BTL_ARGUMENT_BASE_OFFSET+BTL_FWVER_MAIN_OFFSET],fw_data[BTL_ARGUMENT_BASE_OFFSET + BTL_FWVER_ARGU_OFFSET],fw_data[BTL_ARGUMENT_BASE_OFFSET + BTL_PROJECT_ID_OFFSET],fw_data[BTL_ARGUMENT_BASE_OFFSET + BTL_FWVER_DEBUG_OFFSET], BTL_ARGUMENT_BASE_OFFSET);
+      |                                                                                                                                                                                                                                                                     ^
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:1113:319: error: left-hand operand of comma expression has no effect [-Werror=unused-value]
+ 1113 |     BTL_DEBUG("isBlank = %d  ver1 = %d ver2 = %d ver3 = %d ver4 = %d binVer1 = %d binVer2 = %d binVer3 = %d binVer4 = %d specificAddr = %x", isBlank,fwArgPrjID[0],fwArgPrjID[1],fwArgPrjID[2],fwArgPrjID[3],fw_data[BTL_ARGUMENT_BASE_OFFSET+BTL_FWVER_MAIN_OFFSET],fw_data[BTL_ARGUMENT_BASE_OFFSET + BTL_FWVER_ARGU_OFFSET],fw_data[BTL_ARGUMENT_BASE_OFFSET + BTL_PROJECT_ID_OFFSET],fw_data[BTL_ARGUMENT_BASE_OFFSET + BTL_FWVER_DEBUG_OFFSET], BTL_ARGUMENT_BASE_OFFSET);
+      |                                                                                                                                                                                                                                                                                                                               ^
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:1113:377: error: left-hand operand of comma expression has no effect [-Werror=unused-value]
+ 1113 |     BTL_DEBUG("isBlank = %d  ver1 = %d ver2 = %d ver3 = %d ver4 = %d binVer1 = %d binVer2 = %d binVer3 = %d binVer4 = %d specificAddr = %x", isBlank,fwArgPrjID[0],fwArgPrjID[1],fwArgPrjID[2],fwArgPrjID[3],fw_data[BTL_ARGUMENT_BASE_OFFSET+BTL_FWVER_MAIN_OFFSET],fw_data[BTL_ARGUMENT_BASE_OFFSET + BTL_FWVER_ARGU_OFFSET],fw_data[BTL_ARGUMENT_BASE_OFFSET + BTL_PROJECT_ID_OFFSET],fw_data[BTL_ARGUMENT_BASE_OFFSET + BTL_FWVER_DEBUG_OFFSET], BTL_ARGUMENT_BASE_OFFSET);
+      |                                                                                                                                                                                                                                                                                                                                                                                         ^
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:1113:436: error: left-hand operand of comma expression has no effect [-Werror=unused-value]
+ 1113 |     BTL_DEBUG("isBlank = %d  ver1 = %d ver2 = %d ver3 = %d ver4 = %d binVer1 = %d binVer2 = %d binVer3 = %d binVer4 = %d specificAddr = %x", isBlank,fwArgPrjID[0],fwArgPrjID[1],fwArgPrjID[2],fwArgPrjID[3],fw_data[BTL_ARGUMENT_BASE_OFFSET+BTL_FWVER_MAIN_OFFSET],fw_data[BTL_ARGUMENT_BASE_OFFSET + BTL_FWVER_ARGU_OFFSET],fw_data[BTL_ARGUMENT_BASE_OFFSET + BTL_PROJECT_ID_OFFSET],fw_data[BTL_ARGUMENT_BASE_OFFSET + BTL_FWVER_DEBUG_OFFSET], BTL_ARGUMENT_BASE_OFFSET);
+      |                                                                                                                                                                                                                                                                                                                                                                                                                                                    ^
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:1113:436: error: statement with no effect [-Werror=unused-value]
+ 1113 |     BTL_DEBUG("isBlank = %d  ver1 = %d ver2 = %d ver3 = %d ver4 = %d binVer1 = %d binVer2 = %d binVer3 = %d binVer4 = %d specificAddr = %x", isBlank,fwArgPrjID[0],fwArgPrjID[1],fwArgPrjID[2],fwArgPrjID[3],fw_data[BTL_ARGUMENT_BASE_OFFSET+BTL_FWVER_MAIN_OFFSET],fw_data[BTL_ARGUMENT_BASE_OFFSET + BTL_FWVER_ARGU_OFFSET],fw_data[BTL_ARGUMENT_BASE_OFFSET + BTL_PROJECT_ID_OFFSET],fw_data[BTL_ARGUMENT_BASE_OFFSET + BTL_FWVER_DEBUG_OFFSET], BTL_ARGUMENT_BASE_OFFSET);
+      |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:1124:22: error: statement with no effect [-Werror=unused-value]
+ 1124 |             BTL_DEBUG("btl_update_fw_for_self_ctp:btl_update_flash failed\n");
+      |                      ^
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:1127:14: error: statement with no effect [-Werror=unused-value]
+ 1127 |     BTL_DEBUG("btl_update_fw_for_self_ctp exit\n");
+      |              ^
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:1095:19: warning: unused variable 'projectFlag' [-Wunused-variable]
+ 1095 |     unsigned char projectFlag = 0;      //protect flag
+      |                   ^~~~~~~~~~~
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:1093:20: warning: unused variable 'fw_bin_checksum' [-Wunused-variable]
+ 1093 |     unsigned short fw_bin_checksum = 0x0;  //The checksum for firmware in file
+      |                    ^~~~~~~~~~~~~~~
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:1092:20: warning: unused variable 'fw_checksum' [-Wunused-variable]
+ 1092 |     unsigned short fw_checksum = 0x0;  //The checksum for firmware in IC
+      |                    ^~~~~~~~~~~
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c: In function 'btl_auto_update_fw':
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:1148:48: error: left-hand operand of comma expression has no effect [-Werror=unused-value]
+ 1148 |     BTL_DEBUG("btl_auto_update_fw:fwLen = %x\n",fwLen);
+      |                                                ^
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:1148:14: error: statement with no effect [-Werror=unused-value]
+ 1148 |     BTL_DEBUG("btl_auto_update_fw:fwLen = %x\n",fwLen);
+      |              ^
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:1153:18: error: statement with no effect [-Werror=unused-value]
+ 1153 |         BTL_DEBUG("btl_auto_update_fw: btl_update_fw fail\n");
+      |                  ^
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:1157:18: error: statement with no effect [-Werror=unused-value]
+ 1157 |         BTL_DEBUG("btl_auto_update_fw: btl_update_fw success\n");
+      |                  ^
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c: In function 'btl_get_fwArgPrj_id':
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:255:1: error: control reaches end of non-void function [-Werror=return-type]
+  255 | }
+      | ^
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c: In function 'btl_get_key_diff_value':
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:359:1: error: control reaches end of non-void function [-Werror=return-type]
+  359 | }
+      | ^
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c: At top level:
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:933:12: warning: 'btl_read_flash_vertify' defined but not used [-Wunused-function]
+  933 | static int btl_read_flash_vertify(unsigned char *pfwbin)
+      |            ^~~~~~~~~~~~~~~~~~~~~~
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:765:12: warning: 'btl_read_flash_blm18' defined but not used [-Wunused-function]
+  765 | static int btl_read_flash_blm18(unsigned char cmd, int flash_start_addr, unsigned char *buf, int len)
+      |            ^~~~~~~~~~~~~~~~~~~~
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:688:12: warning: 'btl_write_flash_blm18' defined but not used [-Wunused-function]
+  688 | static int btl_write_flash_blm18(unsigned char cmd, int flash_start_addr, unsigned char *buf, int len)
+      |            ^~~~~~~~~~~~~~~~~~~~~
+/Users/admin/Documents/Projects/Shelly/klaviaturkata/main/keypad/debugger.c:112:12: warning: 'btl_soft_reset_switch_int_wakemode' defined but not used [-Wunused-function]
+  112 | static int btl_soft_reset_switch_int_wakemode(void)
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cc1: some warnings being treated as errors
+ninja: build stopped: subcommand failed.

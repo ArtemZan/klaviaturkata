@@ -1,4 +1,4 @@
-# Install script for directory: /Users/admin/Documents/Projects/Shelly/i2c_tools/main
+# Install script for directory: /Users/admin/Documents/Projects/Shelly/klaviaturkata/main
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
