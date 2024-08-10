@@ -1,0 +1,73 @@
+��2����SHA25ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:5940
+load:0x40078000,len:15124
+load'��0080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3492
+entry 0x400805d0
+[0;32mI (104) cpu_start: Multicore app[0m
+[0;32mI (113) cpu_start: Pro cpu start user code[0m
+[0;32mI (113) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (113) app_init: Application information:[0m
+[0;32mI (116) app_init: Project name:     i2c_tools[0m
+[0;32mI (121) app_init: App version:      1[0m
+[0;32mI (125) app_init: Compile time:     Jun 27 2024 22:04:05[0m
+[0;32mI (131) app_init: ELF file SHA256:  c6e4702aa...[0m
+[0;32mI (136) app_init: ESP-IDF:          v5.3-dev-3225-g5a40bb8746-dirty[0m
+[0;32mI (143) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (148) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (153) efuse_init: Chip rev:         v1.0[0m
+[0;32mI (158) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (165) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (171) heap_init: At 3FFB2C98 len 0002D368 (180 KiB): DRAM[0m
+[0;32mI (177) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (184) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (190) heap_init: At 4008C7B8 len 00013848 (78 KiB): IRAM[0m
+[0;32mI (198) spi_flash: detected chip: winbond[0m
+[0;32mI (201) spi_flash: flash io: dio[0m
+[0;33mW (205) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (219) main_task: Started on CPU0[0m
+[0;32mI (229) main_task: Calling app_main()[0m
+[0;32mI (229) gpio: GPIO[14]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:5940
+load:0x40078000,len:15124
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3492
+entry 0x400805d0
+[0;32mI (135) cpu_start: Multicore app[0m
+[0;32mI (143) cpu_start: Pro cpu start user code[0m
+[0;32mI (143) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (144) app_init: Application information:[0m
+[0;32mI (146) app_init: Project name:     i2c_tools[0m
+[0;32mI (151) app_init: App version:      1[0m
+[0;32mI (156) app_init: Compile time:     Jun 27 2024 22:04:05[0m
+[0;32mI (162) app_init: ELF file SHA256:  c6e4702aa...[0m
+[0;32mI (167) app_init: ESP-IDF:          v5.3-dev-3225-g5a40bb8746-dirty[0m
+[0;32mI (174) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (179) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (184) efuse_init: Chip rev:         v1.0[0m
+[0;32mI (189) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (196) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (202) heap_init: At 3FFB2C98 len 0002D368 (180 KiB): DRAM[0m
+[0;32mI (208) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (214) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (221) heap_init: At 4008C7B8 len 00013848 (78 KiB): IRAM[0m
+[0;32mI (229) spi_flash: detected chip: winbond[0m
+[0;32mI (232) spi_flash: flash io: dio[0m
+[0;33mW (236) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (250) main_task: Started on CPU0[0m
+[0;32mI (260) main_task: Calling app_main()[0m
+[0;32mI (260) gpio: GPIO[14]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (60260) main_task: Returned from app_main()[0m

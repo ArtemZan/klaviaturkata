@@ -1,0 +1,334 @@
+allocation:�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 188777542, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:5940
+load:0x40078000,len:15124
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3492
+entry 0x400805d0
+[0;32mI (112) cpu_start: Multicore app[0m
+[0;32mI (121) cpu_start: Pro cpu start user code[0m
+[0;32mI (121) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (121) app_init: Application information:[0m
+[0;32mI (124) app_init: Project name:     i2c_tools[0m
+[0;32mI (129) app_init: App version:      1[0m
+[0;32mI (133) app_init: Compile time:     Jun 27 2024 22:04:05[0m
+[0;32mI (139) app_init: ELF file SHA256:  1fad86925...[0m
+[0;32mI (144) app_init: ESP-IDF:          v5.3-dev-3225-g5a40bb8746-dirty[0m
+[0;32mI (151) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (156) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (161) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (166) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (173) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (179) heap_init: At 3FFB2D58 len 0002D2A8 (180 KiB): DRAM[0m
+[0;32mI (185) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (192) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (198) heap_init: At 4008CC2C len 000133D4 (76 KiB): IRAM[0m
+[0;32mI (206) spi_flash: detected chip: generic[0m
+[0;32mI (209) spi_flash: flash io: dio[0m
+[0;33mW (213) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (227) main_task: Started on CPU0[0m
+[0;32mI (237) main_task: Calling app_main()[0m
+[0;32mI (237) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (237) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1247) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1247) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (38507) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (38507) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (38507) i2c.master: I2C hardware timeout detected[0m
+[0;31mE (38517) i2c.master: s_i2c_synchronous_transaction(833): I2C transaction failed[0m
+[0;32mI (38527) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (38537) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (38547) i2c.master: i2c_master_transmit(1035): I2C transaction failed[0m
+[0;32mI (38547) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (38557) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Got mode: 0
+Got calibration: 0
+Got sensitivity: 0
+Got active channels: 0, 0, 0, 0
+[0;32mI (40967) i2c-tools: Base values: [0m
+0 0 0 0 0 0 0 0 0 0 0 0 
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 188777542, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:5940
+load:0x40078000,len:15124
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3492
+entry 0x400805d0
+[0;32mI (112) cpu_start: Multicore app[0m
+[0;32mI (121) cpu_start: Pro cpu start user code[0m
+[0;32mI (121) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (121) app_init: Application information:[0m
+[0;32mI (124) app_init: Project name:     i2c_tools[0m
+[0;32mI (129) app_init: App version:      1[0m
+[0;32mI (133) app_init: Compile time:     Jun 27 2024 22:04:05[0m
+[0;32mI (139) app_init: ELF file SHA256:  1fad86925...[0m
+[0;32mI (144) app_init: ESP-IDF:          v5.3-dev-3225-g5a40bb8746-dirty[0m
+[0;32mI (151) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (156) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (161) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (166) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (173) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (179) heap_init: At 3FFB2D58 len 0002D2A8 (180 KiB): DRAM[0m
+[0;32mI (185) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (192) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (198) heap_init: At 4008CC2C len 000133D4 (76 KiB): IRAM[0m
+[0;32mI (206) spi_flash: detected chip: generic[0m
+[0;32mI (209) spi_flash: flash io: dio[0m
+[0;33mW (213) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (227) main_task: Started on CPU0[0m
+[0;32mI (237) main_task: Calling app_main()[0m
+[0;32mI (237) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (237) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Got mode: 0
+Got calibration: 0
+Got sensitivity: 0
+Got active channels: 0, 0, 0, 0
+[0;32mI (3647) i2c-tools: Base values: [0m
+0 0 0 0 0 0 0 0 0 0 0 0 
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 188777542, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:5940
+load:0x40078000,len:15124
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3492
+entry 0x400805d0
+[0;32mI (112) cpu_start: Multicore app[0m
+[0;32mI (121) cpu_start: Pro cpu start user code[0m
+[0;32mI (121) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (121) app_init: Application information:[0m
+[0;32mI (124) app_init: Project name:     i2c_tools[0m
+[0;32mI (129) app_init: App version:      1[0m
+[0;32mI (133) app_init: Compile time:     Jun 27 2024 22:04:05[0m
+[0;32mI (139) app_init: ELF file SHA256:  1fad86925...[0m
+[0;32mI (144) app_init: ESP-IDF:          v5.3-dev-3225-g5a40bb8746-dirty[0m
+[0;32mI (151) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (156) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (161) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (166) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (173) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (179) heap_init: At 3FFB2D58 len 0002D2A8 (180 KiB): DRAM[0m
+[0;32mI (185) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (192) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (198) heap_init: At 4008CC2C len 000133D4 (76 KiB): IRAM[0m
+[0;32mI (206) spi_flash: detected chip: generic[0m
+[0;32mI (209) spi_flash: flash io: dio[0m
+[0;33mW (213) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (227) main_task: Started on CPU0[0m
+[0;32mI (237) main_task: Calling app_main()[0m
+[0;32mI (237) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (237) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Got mode: 0
+Got calibration: 0
+Got sensitivity: 0
+Got active channels: 0, 0, 0, 0
+[0;32mI (3647) i2c-tools: Base values: [0m
+0 0 0 0 0 0 0 0 0 0 0 0 
+[0;32mI (23647) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (23647) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Guru Meditation Error: Core  0 panic'ed (Interrupt wdt timeout on CPU0). 
+
+Core  0 register dump:
+PC      : 0x400841a3  PS      : 0x00060034  A0      : 0x800842fd  A1      : 0x3ffb0f60  
+A2      : 0x3ffb6414  A3      : 0x3ffb6424  A4      : 0x3ffb0f90  A5      : 0x00000000  
+A6      : 0x00000000  A7      : 0x3ffb675c  A8      : 0x00000010  A9      : 0x3ffb0f50  
+A10     : 0x3ffb68a4  A11     : 0x3ffb6424  A12     : 0x00000000  A13     : 0x00060023  
+A14     : 0x00000001  A15     : 0x3ffb6850  SAR     : 0x0000000d  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x4000c2e0  LEND    : 0x4000c2f6  LCOUNT  : 0xffffffff  
+Core  0 was running in ISR context:
+EPC1    : 0x400d2547  EPC2    : 0x00000000  EPC3    : 0x00000000  EPC4    : 0x400841a3
+
+
+Backtrace: 0x400841a0:0x3ffb0f60 0x400842fa:0x3ffb0f90 0x40082289:0x3ffb0fd0 0x40082d09:0x3ffb0ff0 0x4000bfed:0x3ffb4d00 0x40086627:0x3ffb4d10 0x400d9d45:0x3ffb4d30 0x400d9e34:0x3ffb4d60 0x400da82d:0x3ffb4d90 0x400d6271:0x3ffb4df0 0x400d652d:0x3ffb4e10 0x400e6aec:0x3ffb4e50 0x40086285:0x3ffb4e80
+
+
+Core  1 register dump:
+PC      : 0x400845aa  PS      : 0x00060c34  A0      : 0x800d23de  A1      : 0x3ffb5a20  
+A2      : 0x00000000  A3      : 0x0000abab  A4      : 0x8008662a  A5      : 0x3ffb61c0  
+A6      : 0x00000003  A7      : 0x00060023  A8      : 0x800d880e  A9      : 0x3ffb59e0  
+A10     : 0x00000000  A11     : 0x00000001  A12     : 0x00000000  A13     : 0x00000001  
+A14     : 0x3ffb25fc  A15     : 0x3ffafd20  SAR     : 0x00000000  EXCCAUSE: 0x00000005  
+EXCVADDR: 0x00000000  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x400845a7:0x3ffb5a20 0x400d23db:0x3ffb5a40 0x40087462:0x3ffb5a60 0x40086285:0x3ffb5a80
+
+
+
+
+ELF file SHA256: 1fad86925
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 188777542, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:5940
+load:0x40078000,len:15124
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3492
+entry 0x400805d0
+[0;32mI (111) cpu_start: Multicore app[0m
+[0;32mI (120) cpu_start: Pro cpu start user code[0m
+[0;32mI (120) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (120) app_init: Application information:[0m
+[0;32mI (123) app_init: Project name:     i2c_tools[0m
+[0;32mI (128) app_init: App version:      1[0m
+[0;32mI (133) app_init: Compile time:     Jun 27 2024 22:04:05[0m
+[0;32mI (139) app_init: ELF file SHA256:  1fad86925...[0m
+[0;32mI (144) app_init: ESP-IDF:          v5.3-dev-3225-g5a40bb8746-dirty[0m
+[0;32mI (151) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (156) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (160) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (166) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (173) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (179) heap_init: At 3FFB2D58 len 0002D2A8 (180 KiB): DRAM[0m
+[0;32mI (185) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (191) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (198) heap_init: At 4008CC2C len 000133D4 (76 KiB): IRAM[0m
+[0;32mI (205) spi_flash: detected chip: generic[0m
+[0;32mI (208) spi_flash: flash io: dio[0m
+[0;33mW (212) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (226) main_task: Started on CPU0[0m
+[0;32mI (236) main_task: Calling app_main()[0m
+[0;32mI (236) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (236) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1246) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1246) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1246) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1256) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (1266) i2c.master: I2C hardware timeout detected[0m
+[0;31mE (1276) i2c.master: s_i2c_synchronous_transaction(833): I2C transaction failed[0m
+[0;32mI (1286) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1286) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (1296) i2c.master: i2c_master_transmit(1035): I2C transaction failed[0m
+[0;32mI (1306) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1316) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1326) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1336) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (1346) i2c.master: I2C hardware timeout detected[0m
+[0;31mE (1346) i2c.master: s_i2c_synchronous_transaction(833): I2C transaction failed[0m
+[0;32mI (1356) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1366) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (1376) i2c.master: i2c_master_receive(1078): I2C transaction failed[0m
+Got mode: 134
+[0;32mI (1486) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1486) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1486) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1496) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (1506) i2c.master: I2C hardware timeout detected[0m
+[0;31mE (1516) i2c.master: s_i2c_synchronous_transaction(833): I2C transaction failed[0m
+[0;32mI (1526) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1526) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (1536) i2c.master: i2c_master_transmit(1035): I2C transaction failed[0m
+[0;32mI (1546) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1556) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1566) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1576) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (1586) i2c.master: I2C hardware timeout detected[0m
+[0;31mE (1586) i2c.master: s_i2c_synchronous_transaction(833): I2C transaction failed[0m
+[0;32mI (1596) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1606) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (1616) i2c.master: i2c_master_receive(1078): I2C transaction failed[0m
+Got calibration: 156
+[0;32mI (1726) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1726) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1726) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1736) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (1746) i2c.master: I2C hardware timeout detected[0m
+[0;31mE (1756) i2c.master: s_i2c_synchronous_transaction(833): I2C transaction failed[0m
+[0;32mI (1766) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1766) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (1776) i2c.master: i2c_master_transmit(1035): I2C transaction failed[0m
+[0;32mI (1786) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1796) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1806) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1816) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (1826) i2c.master: I2C hardware timeout detected[0m
+[0;31mE (1826) i2c.master: s_i2c_synchronous_transaction(833): I2C transaction failed[0m
+[0;32mI (1836) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1846) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (1856) i2c.master: i2c_master_receive(1078): I2C transaction failed[0m
+Got sensitivity: 36
+[0;32mI (1966) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1966) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1966) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1976) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (1986) i2c.master: I2C hardware timeout detected[0m
+[0;31mE (1996) i2c.master: s_i2c_synchronous_transaction(833): I2C transaction failed[0m
+[0;32mI (2006) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (2006) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (2016) i2c.master: i2c_master_transmit(1035): I2C transaction failed[0m
+[0;32mI (2126) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (2126) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 188777542, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:5940
+load:0x40078000,len:15124
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3492
+entry 0x400805d0
+[0;32mI (112) cpu_start: Multicore app[0m
+[0;32mI (121) cpu_start: Pro cpu start user code[0m
+[0;32mI (121) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (121) app_init: Application information:[0m
+[0;32mI (124) app_init: Project name:     i2c_tools[0m
+[0;32mI (129) app_init: App version:      1[0m
+[0;32mI (133) app_init: Compile time:     Jun 27 2024 22:04:05[0m
+[0;32mI (139) app_init: ELF file SHA256:  1fad86925...[0m
+[0;32mI (144) app_init: ESP-IDF:          v5.3-dev-3225-g5a40bb8746-dirty[0m
+[0;32mI (151) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (156) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (161) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (166) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (173) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (179) heap_init: At 3FFB2D58 len 0002D2A8 (180 KiB): DRAM[0m
+[0;32mI (185) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (192) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (198) heap_init: At 4008CC2C len 000133D4 (76 KiB): IRAM[0m
+[0;32mI (206) spi_flash: detected chip: generic[0m
+[0;32mI (209) spi_flash: flash io: dio[0m
+[0;33mW (213) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (227) main_task: Started on CPU0[0m
+[0;32mI (237) main_task: Calling app_main()[0m
+[0;32mI (237) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (237) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1247) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1247) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (28577) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (28587) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (28587) i2c.master: I2C hardware timeout detected[0m
+[0;31mE (28597) i2c.master: s_i2c_synchronous_transaction(833): I2C transaction failed[0m
+[0;32mI (28607) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (28617) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (28627) i2c.master: i2c_master_transmit(1035): I2C transaction failed[0m
+[0;32mI (28627) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (28637) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Got mode: 0
+Got calibration: 0
+Got sensitivity: 0
+Got active channels: 0, 0, 0, 0
+[0;32mI (31047) i2c-tools: Base values: [0m
+0 0 0 0 0 0 0 0 0 0 0 0 

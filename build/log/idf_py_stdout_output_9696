@@ -1,0 +1,341 @@
+(166) heap_init�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 188777542, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:5940
+load:0x40078000,len:15124
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3492
+entry 0x400805d0
+[0;32mI (112) cpu_start: Multicore app[0m
+[0;32mI (121) cpu_start: Pro cpu start user code[0m
+[0;32mI (121) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (121) app_init: Application information:[0m
+[0;32mI (124) app_init: Project name:     i2c_tools[0m
+[0;32mI (129) app_init: App version:      1[0m
+[0;32mI (133) app_init: Compile time:     Jun 27 2024 22:04:05[0m
+[0;32mI (139) app_init: ELF file SHA256:  f9975733a...[0m
+[0;32mI (144) app_init: ESP-IDF:          v5.3-dev-3225-g5a40bb8746-dirty[0m
+[0;32mI (151) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (156) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (161) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (166) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (173) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (179) heap_init: At 3FFB2D58 len 0002D2A8 (180 KiB): DRAM[0m
+[0;32mI (185) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (192) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (198) heap_init: At 4008CC2C len 000133D4 (76 KiB): IRAM[0m
+[0;32mI (206) spi_flash: detected chip: generic[0m
+[0;32mI (209) spi_flash: flash io: dio[0m
+[0;33mW (213) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (227) main_task: Started on CPU0[0m
+[0;32mI (237) main_task: Calling app_main()[0m
+[0;32mI (237) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (237) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (247) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (257) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (267) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (277) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (287) i2c.master: I2C hardware timeout detected[0m
+[0;31mE (287) i2c.master: s_i2c_synchronous_transaction(833): I2C transaction failed[0m
+[0;32mI (297) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (307) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (317) i2c.master: i2c_master_transmit(1035): I2C transaction failed[0m
+[0;32mI (327) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (337) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (347) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (357) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (357) i2c.master: I2C hardware timeout detected[0m
+[0;31mE (367) i2c.master: s_i2c_synchronous_transaction(833): I2C transaction failed[0m
+[0;32mI (377) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (387) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (397) i2c.master: i2c_master_receive(1078): I2C transaction failed[0m
+Got mode: 134
+[0;32mI (1397) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1397) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1397) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1407) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (1417) i2c.master: I2C hardware timeout detected[0m
+[0;31mE (1427) i2c.master: s_i2c_synchronous_transaction(833): I2C transaction failed[0m
+[0;32mI (1437) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1437) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (1447) i2c.master: i2c_master_transmit(1035): I2C transaction failed[0m
+[0;32mI (1457) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1467) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1477) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1487) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (1497) i2c.master: I2C hardware timeout detected[0m
+[0;31mE (1497) i2c.master: s_i2c_synchronous_transaction(833): I2C transaction failed[0m
+[0;32mI (1507) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1517) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (1527) i2c.master: i2c_master_receive(1078): I2C transaction failed[0m
+Got calibration: 156
+[0;32mI (2537) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (2537) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (2537) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (2547) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (2557) i2c.master: I2C hardware timeout detected[0m
+[0;31mE (2567) i2c.master: s_i2c_synchronous_transaction(833): I2C transaction failed[0m
+[0;32mI (2577) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (2577) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (2587) i2c.master: i2c_master_transmit(1035): I2C transaction failed[0m
+[0;32mI (2597) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (2607) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (2617) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (2627) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (2637) i2c.master: I2C hardware timeout detected[0m
+[0;31mE (2637) i2c.master: s_i2c_synchronous_transaction(833): I2C transaction failed[0m
+[0;32mI (2647) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (2657) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (2667) i2c.master: i2c_master_receive(1078): I2C transaction failed[0m
+Got sensitivity: 36
+[0;32mI (3677) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (3677) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (3677) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (3687) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (3697) i2c.master: I2C hardware timeout detected[0m
+[0;31mE (3707) i2c.master: s_i2c_synchronous_transaction(833): I2C transaction failed[0m
+[0;32mI (3717) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (3717) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (3727) i2c.master: i2c_master_transmit(1035): I2C transaction failed[0m
+[0;32mI (4737) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (4737) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (4737) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (4747) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (4757) i2c.master: I2C hardware timeout detected[0m
+[0;31mE (4767) i2c.master: s_i2c_synchronous_transaction(833): I2C transaction failed[0m
+[0;32mI (4777) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (4777) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (4787) i2c.master: i2c_master_transmit(1035): I2C transaction failed[0m
+[0;32mI (4797) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (4807) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (4817) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (4827) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (4837) i2c.master: I2C hardware timeout detected[0m
+[0;31mE (4837) i2c.master: s_i2c_synchronous_transaction(833): I2C transaction failed[0m
+[0;32mI (4847) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (4857) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (4867) i2c.master: i2c_master_receive(1078): I2C transaction failed[0m
+Got active channels: 3, 252, 63, 252
+[0;32mI (5877) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (5877) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (5877) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (5887) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (5897) i2c.master: I2C hardware timeout detected[0m
+[0;31mE (5907) i2c.master: s_i2c_synchronous_transaction(833): I2C transaction failed[0m
+[0;32mI (5917) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (5917) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (5927) i2c.master: i2c_master_transmit(1035): I2C transaction failed[0m
+[0;32mI (5937) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (5947) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (5957) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (5967) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (5977) i2c.master: I2C hardware timeout detected[0m
+[0;31mE (5977) i2c.master: s_i2c_synchronous_transaction(833): I2C transaction failed[0m
+[0;32mI (5987) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (5997) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (6007) i2c.master: i2c_master_receive(1078): I2C transaction failed[0m
+[0;32mI (6027) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (6027) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (6037) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (6047) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (6057) i2c.master: I2C hardware timeout detected[0m
+[0;31mE (6057) i2c.master: s_i2c_synchronous_transaction(833): I2C transaction failed[0m
+[0;32mI (6067) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (6077) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (6087) i2c.master: i2c_master_transmit(1035): I2C transaction failed[0m
+[0;32mI (6097) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (6097) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (6107) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (6117) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (6127) i2c.master: I2C hardware timeout detected[0m
+[0;31mE (6137) i2c.master: s_i2c_synchronous_transaction(833): I2C transaction failed[0m
+[0;32mI (6147) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (6157) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (6157) i2c.master: i2c_master_receive(1078): I2C transaction failed[0m
+[0;32mI (6177) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (6177) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (6187) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (6197) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (6207) i2c.master: I2C hardware timeout detected[0m
+[0;31mE (6207) i2c.master: s_i2c_synchronous_transaction(833): I2C transaction failed[0m
+[0;32mI (6217) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (6227) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (6237) i2c.master: i2c_master_transmit(1035): I2C transaction failed[0m
+[0;32mI (6247) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (6257) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (6267) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (6277) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (6287) i2c.master: I2C hardware timeout detected[0m
+[0;31mE (6287) i2c.master: s_i2c_synchronous_transaction(833): I2C transaction failed[0m
+[0;32mI (6297) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (6307) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (6317) i2c.master: i2c_master_receive(1078): I2C transaction failed[0m
+[0;32mI (6337) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (6337) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (6337) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (6347) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (6357) i2c.master: I2C hardware timeout detected[0m
+[0;31mE (6367) i2c.master: s_i2c_synchronous_transaction(833): I2C transaction failed[0m
+[0;32mI (6377) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (6387) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (6397) i2c.master: i2c_master_transmit(1035): I2C transaction failed[0m
+[0;32mI (6397) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (6407) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (6417) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (6427) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (6437) i2c.master: I2C hardware timeout detected[0m
+[0;31mE (6447) i2c.master: s_i2c_synchronous_transaction(833): I2C transaction failed[0m
+[0;32mI (6447) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (6457) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (6467) i2c.master: i2c_master_receive(1078): I2C transaction failed[0m
+[0;32mI (6487) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (6487) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (6497) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (6507) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (6517) i2c.master: I2C hardware timeout detected[0m
+[0;31mE (6517) i2c.master: s_i2c_synchronous_transaction(833): I2C transaction failed[0m
+[0;32mI (6527) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (6537) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (6547) i2c.master: i2c_master_transmit(1035): I2C transaction failed[0m
+[0;32mI (6557) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (6567) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (6567) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (6577) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (6587) i2c.master: I2C hardware timeout detected[0m
+[0;31mE (6597) i2c.master: s_i2c_synchronous_transaction(833): I2C transaction failed[0m
+[0;32mI (6607) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (6617) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (6627) i2c.master: i2c_master_receive(1078): I2C transaction failed[0m
+[0;32mI (6637) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (6637) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (6647) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (6657) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (6667) i2c.master: I2C hardware timeout detected[0m
+[0;31mE (6677) i2c.master: s_i2c_synchronous_transaction(833): I2C transaction failed[0m
+[0;32mI (6677) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (6687) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (6697) i2c.master: i2c_master_transmit(1035): I2C transaction failed[0m
+[0;32mI (6707) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (6717) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (6727) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (6737) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (6747) i2c.master: I2C hardware timeout detected[0m
+[0;31mE (6747) i2c.master: s_i2c_synchronous_transaction(833): I2C transaction failed[0m
+[0;32mI (6757) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (6767) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (6777) i2c.master: i2c_master_receive(1078): I2C transaction failed[0m
+[0;32mI (6797) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (6797) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (6807) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (6807) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (6817) i2c.master: I2C hardware timeout detected[0m
+[0;31mE (6827) i2c.master: s_i2c_synchronous_transaction(833): I2C transaction failed[0m
+[0;32mI (6837) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (6847) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (6857) i2c.master: i2c_master_transmit(1035): I2C transaction failed[0m
+[0;32mI (6857) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (6867) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (6877) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (6887) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (6897) i2c.master: I2C hardware timeout detected[0m
+[0;31mE (6907) i2c.master: s_i2c_synchronous_transaction(833): I2C transaction failed[0m
+[0;32mI (6907) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (6917) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (6927) i2c.master: i2c_master_receive(1078): I2C transaction failed[0m
+[0;32mI (6947) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (6947) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (6957) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (6967) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (6977) i2c.master: I2C hardware timeout detected[0m
+[0;31mE (6977) i2c.master: s_i2c_synchronous_transaction(833): I2C transaction failed[0m
+[0;32mI (6987) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (6997) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (7007) i2c.master: i2c_master_transmit(1035): I2C transaction failed[0m
+[0;32mI (7017) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (7027) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (7037) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (7047) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (7047) i2c.master: I2C hardware timeout detected[0m
+[0;31mE (7057) i2c.master: s_i2c_synchronous_transaction(833): I2C transaction failed[0m
+[0;32mI (7067) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (7077) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (7087) i2c.master: i2c_master_receive(1078): I2C transaction failed[0m
+[0;32mI (7097) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (7097) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (7107) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (7117) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (7127) i2c.master: I2C hardware timeout detected[0m
+[0;31mE (7137) i2c.master: s_i2c_synchronous_transaction(833): I2C transaction failed[0m
+[0;32mI (7147) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (7147) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (7157) i2c.master: i2c_master_transmit(1035): I2C transaction failed[0m
+[0;32mI (7167) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (7177) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (7187) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (7197) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (7207) i2c.master: I2C hardware timeout detected[0m
+[0;31mE (7207) i2c.master: s_i2c_synchronous_transaction(833): I2C transaction failed[0m
+[0;32mI (7217) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (7227) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (7237) i2c.master: i2c_master_receive(1078): I2C transaction failed[0m
+[0;32mI (7257) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (7257) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (7267) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (7277) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (7287) i2c.master: I2C hardware timeout detected[0m
+[0;31mE (7287) i2c.master: s_i2c_synchronous_transaction(833): I2C transaction failed[0m
+[0;32mI (7297) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (7307) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (7317) i2c.master: i2c_master_transmit(1035): I2C transaction failed[0m
+[0;32mI (7317) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (7327) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (7337) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (7347) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (7357) i2c.master: I2C hardware timeout detected[0m
+[0;31mE (7367) i2c.master: s_i2c_synchronous_transaction(833): I2C transaction failed[0m
+[0;32mI (7377) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (7387) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (7387) i2c.master: i2c_master_receive(1078): I2C transaction failed[0m
+[0;32mI (7407) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (7407) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (7417) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (7427) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (7437) i2c.master: I2C hardware timeout detected[0m
+[0;31mE (7437) i2c.master: s_i2c_synchronous_transaction(833): I2C transaction failed[0m
+[0;32mI (7447) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (7457) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (7467) i2c.master: i2c_master_transmit(1035): I2C transaction failed[0m
+[0;32mI (7477) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (7487) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (7497) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (7507) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (7517) i2c.master: I2C hardware timeout detected[0m
+[0;31mE (7517) i2c.master: s_i2c_synchronous_transaction(833): I2C transaction failed[0m
+[0;32mI (7527) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (7537) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (7547) i2c.master: i2c_master_receive(1078): I2C transaction failed[0m
+[0;32mI (7567) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (7567) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (7567) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (7577) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (7587) i2c.master: I2C hardware timeout detected[0m
+[0;31mE (7597) i2c.master: s_i2c_synchronous_transaction(833): I2C transaction failed[0m
+[0;32mI (7607) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (7617) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (7617) i2c.master: i2c_master_transmit(1035): I2C transaction failed[0m
+[0;32mI (7627) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (7637) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (7647) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (7657) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (7667) i2c.master: I2C hardware timeout detected[0m
+[0;31mE (7677) i2c.master: s_i2c_synchronous_transaction(833): I2C transaction failed[0m
+[0;32mI (7677) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (7687) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (7697) i2c.master: i2c_master_receive(1078): I2C transaction failed[0m
+[0;32mI (7717) gpio: GPIO[18]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (7717) gpio: GPIO[19]| InputEn: 1| OutputEn: 1| OpenDrain: 1| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (7727) gpio: GPIO[18]| Inpu
